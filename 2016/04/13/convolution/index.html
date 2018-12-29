@@ -16,15 +16,15 @@
 <meta property="og:site_name" content="Blog of Yvon Shong">
 <meta property="og:description" content="卷积相关知识的梳理">
 <meta property="og:locale" content="English/中文/日本語">
-<meta property="og:image" content="http://oljkaeely.bkt.clouddn.com/static/image/image-processing/多项式乘法.jpg">
-<meta property="og:image" content="http://oljkaeely.bkt.clouddn.com/static/image/image-processing/二维卷积.jpg">
-<meta property="og:image" content="http://oljkaeely.bkt.clouddn.com/static/image/image-processing/反转.jpg">
-<meta property="og:image" content="http://oljkaeely.bkt.clouddn.com/static/image/image-processing/卷积定理的证明.jpg">
-<meta property="og:updated_time" content="2018-12-29T15:37:30.712Z">
+<meta property="og:image" content="http://www.shong.win/2016/04/static/image//image-processing/多项式乘法.jpg">
+<meta property="og:image" content="http://www.shong.win/2016/04/static/image//image-processing/二维卷积.jpg">
+<meta property="og:image" content="http://www.shong.win/2016/04/static/image//image-processing/反转.jpg">
+<meta property="og:image" content="http://www.shong.win/2016/04/static/image//image-processing/卷积定理的证明.jpg">
+<meta property="og:updated_time" content="2018-12-29T17:10:46.814Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深入理解卷积">
 <meta name="twitter:description" content="卷积相关知识的梳理">
-<meta name="twitter:image" content="http://oljkaeely.bkt.clouddn.com/static/image/image-processing/多项式乘法.jpg">
+<meta name="twitter:image" content="http://www.shong.win/2016/04/static/image//image-processing/多项式乘法.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Blog of Yvon Shong" type="application/atom+xml">
   
@@ -273,12 +273,12 @@
 </tbody>
 </table>
 <p>多项式乘法：</p>
-<p><img src="http://oljkaeely.bkt.clouddn.com/static/image/image-processing/多项式乘法.jpg" alt=""></p>
+<p><img src="../../static/image//image-processing/多项式乘法.jpg" alt=""></p>
 <p>多项式a(n1)乘多项式b(n2)</p>
 <p>对应的系数矩阵(向量)为a[最高次的系数,…,常数项系数] 和 b[最高次的系数,…,常数项系数]</p>
 <p>多项式相乘结果的系数为c[最高次的系数,…,常数项系数]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c(i)=\sum_&#123;k=0&#125;^i a(k)b(i-k),i=0~(n1+n2)</span><br></pre></td></tr></table></figure></p>
 <h2 id="二维图像"><a href="#二维图像" class="headerlink" title="二维图像"></a>二维图像</h2><p>对应一维信号处理过程，把时间t的定义域空间换成图像的平面矩阵形状空间</p>
-<h3 id="二维离散卷积公式"><a href="#二维离散卷积公式" class="headerlink" title="二维离散卷积公式"></a>二维离散卷积公式</h3><p><img src="http://oljkaeely.bkt.clouddn.com/static/image/image-processing/二维卷积.jpg" alt=""></p>
+<h3 id="二维离散卷积公式"><a href="#二维离散卷积公式" class="headerlink" title="二维离散卷积公式"></a>二维离散卷积公式</h3><p><img src="../../static/image//image-processing/二维卷积.jpg" alt=""></p>
 <h3 id="二维连续卷积公式"><a href="#二维连续卷积公式" class="headerlink" title="二维连续卷积公式"></a>二维连续卷积公式</h3><p>(f*g)(t1,t2)=∫∫f(x1,x2)g(t1-x1,t2-x2)dx1 dx2</p>
 <h3 id="一些例子的理解"><a href="#一些例子的理解" class="headerlink" title="一些例子的理解"></a>一些例子的理解</h3><h4 id="将图像按照模板进行处理"><a href="#将图像按照模板进行处理" class="headerlink" title="将图像按照模板进行处理"></a>将图像按照模板进行处理</h4><p>对于图像而言，离散卷积的计算过程是模板翻转，然后在原图像上滑动模板，把对应位置上的元素相乘后加起来，得到最终的结果。如果不考虑翻转，这个滑动-相乘-叠加的过程就是相关操作。</p>
 <h4 id="滤波"><a href="#滤波" class="headerlink" title="滤波"></a>滤波</h4><p>比如最简单的高斯模板，就是把模板内像素乘以不同的权值然后加起来作为模板的中心像素值，如果模板取值全为1，就是滑动平均；如果模板取值为高斯，就是加权滑动平均，权重是中间高，四周低，在频率上理解就是低通滤波器。</p>
@@ -292,7 +292,7 @@
 <p>整体就是个：褶 -&gt; 移 -&gt; 积 -&gt; 和  的过程</p>
 <h3 id="卷积的类型"><a href="#卷积的类型" class="headerlink" title="卷积的类型"></a>卷积的类型</h3><h4 id="离散卷积和连续函数的卷积"><a href="#离散卷积和连续函数的卷积" class="headerlink" title="离散卷积和连续函数的卷积"></a>离散卷积和连续函数的卷积</h4><h4 id="线性卷积和循环卷积"><a href="#线性卷积和循环卷积" class="headerlink" title="线性卷积和循环卷积"></a>线性卷积和循环卷积</h4><p>通常说卷积时指的是线性卷积，在信号处理领域是跟线性时不变系统有关的一种运算</p>
 <p>循环卷积我理解是使用DFT(FFT)计算线性卷积时的衍生品。</p>
-<h2 id="一些问题："><a href="#一些问题：" class="headerlink" title="一些问题："></a>一些问题：</h2><h2 id="为什么要反转？"><a href="#为什么要反转？" class="headerlink" title="为什么要反转？"></a>为什么要反转？</h2><p><img src="http://oljkaeely.bkt.clouddn.com/static/image/image-processing/反转.jpg" alt=""></p>
+<h2 id="一些问题："><a href="#一些问题：" class="headerlink" title="一些问题："></a>一些问题：</h2><h2 id="为什么要反转？"><a href="#为什么要反转？" class="headerlink" title="为什么要反转？"></a>为什么要反转？</h2><p><img src="../../static/image//image-processing/反转.jpg" alt=""></p>
 <p>卷积的其中一方参与者是冲击响应，它所描述的的曲线方向与时间流逝一致。而卷积的输出等于以前的信号效果累加，这个累加必然从当前时间点逆时间流逝方向进行的。很显然，离当前时间越近，那个输入残留在系统中的回响就越大。</p>
 <p>也可以从之前的多项式乘法的解释上理解。</p>
 <h2 id="卷积核可不可以是改变的？"><a href="#卷积核可不可以是改变的？" class="headerlink" title="卷积核可不可以是改变的？"></a>卷积核可不可以是改变的？</h2><p>某种意义上，对任意一个t，h(τ)对它做了一个相同模式的贡献／变化</p>
@@ -316,7 +316,7 @@
 这个公式称为离散卷积，用“*”表示。
 </code></pre><h1 id="卷积定理"><a href="#卷积定理" class="headerlink" title="卷积定理"></a>卷积定理</h1><p>两个函数卷积后的傅里叶变换=两个函数的傅里叶变换后的乘积</p>
 <p>卷积定理指出，函数卷积的傅里叶变换是函数傅里叶变换的乘积。即一个域中的卷积对应于另一个域中的乘积，例如时域中的卷积对应于频域中的乘积。<br>这一定理对拉普拉斯变换、双边拉普拉斯变换、Z变换、Mellin变换和Hartley变换等各种傅里叶变换的变体同样成立。在调和分析中还可以推广到在局部紧致的阿贝尔群上定义的傅里叶变换。<br>利用卷积定理可以简化卷积的运算量。对于长度为n的序列，按照卷积的定义进行计算，需要做2n-1组对位乘法，其计算复杂度为O(n^2)；而利用傅里叶变换将序列变换到频域上后，只需要一组对位乘法，利用傅里叶变换的快速算法之后，总的计算复杂度为O(n*log n)。这一结果可以在快速乘法计算中得到应用。</p>
-<p><img src="http://oljkaeely.bkt.clouddn.com/static/image/image-processing/卷积定理的证明.jpg" alt=""></p>
+<p><img src="../../static/image//image-processing/卷积定理的证明.jpg" alt=""></p>
 
       
 
@@ -334,13 +334,13 @@
                   <div class="reward-box">
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="http://oljkaeely.bkt.clouddn.com/alipay.jpg">
+                      <img class="reward-img" src="http://ww1.sinaimg.cn/large/6b2f6355ly1fyo438owfuj2083083jsc.jpg">
                       <span class="reward-type">支付宝</span>
                     </div>
                     
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="http://oljkaeely.bkt.clouddn.com/weixinpay.jpg">
+                      <img class="reward-img" src="http://ww1.sinaimg.cn/large/6b2f6355ly1fyo43wmet4j20gz0gvn07.jpg">
                       <span class="reward-type">微信</span>
                     </div>
                     
