@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Blog of Yvon Shong">
 <meta property="og:description" content="在经过申请域名到搭建hexo，以及利用AppVeyor实现持续集成，hexo已经实现了基本的编辑模式，就是我push文章的md文档，然后会自动发布hexo生成的静态网页，只需要git环境。接下来我们对博客进行优化，尝试各种插件。">
 <meta property="og:locale" content="English/中文/日本語">
-<meta property="og:updated_time" content="2018-06-17T17:55:09.226Z">
+<meta property="og:updated_time" content="2018-12-29T15:37:30.712Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 进阶与优化">
 <meta name="twitter:description" content="在经过申请域名到搭建hexo，以及利用AppVeyor实现持续集成，hexo已经实现了基本的编辑模式，就是我push文章的md文档，然后会自动发布hexo生成的静态网页，只需要git环境。接下来我们对博客进行优化，尝试各种插件。">
@@ -215,7 +215,7 @@
 <p>更换DNS，或者设置CNAME记录</p>
 <ul>
 <li><p>访问量计数<br><a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">不蒜子</a><br>在主题的某个js文件下插入</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">           &lt;span id=<span class="string">"busuanzi_container_site_pv"</span>&gt;本站总访问量&lt;span id=<span class="string">"busuanzi_value_site_pv"</span>&gt;&lt;/span&gt;次&lt;<span class="regexp">/span&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">           &lt;span id=<span class="string">"busuanzi_container_site_pv"</span>&gt;本站总访问量&lt;span id=<span class="string">"busuanzi_value_site_pv"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span>次&lt;<span class="regexp">/span&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>RSS<br>我记得以前看到一句话，叫做 </p>
 <blockquote>
@@ -351,11 +351,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/02/20/linear-algebra/linear-algebra/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/03/12/fujisan/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          深入理解线性代数
+          富士山下/爱情转移/春夏秋冬
         
       </div>
     </a>
@@ -541,19 +541,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">microsoft</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">matlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -562,6 +550,30 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">opencv</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">matlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ROS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">xml</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">bootstrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">microsoft</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -585,18 +597,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ROS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">xml</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">bootstrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">algorithm</a>
               </li>
              
@@ -609,11 +609,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">ML</a>
+                <a href="javascript:void(0)" class="js-tag color3">tf</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">tf</a>
+                <a href="javascript:void(0)" class="js-tag color3">ML</a>
               </li>
             
             <div class="clearfix"></div>
