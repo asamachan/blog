@@ -16,14 +16,14 @@
 <meta property="og:site_name" content="Blog of Yvon Shong">
 <meta property="og:description" content="在第一天尝试了hexo之后，觉得这个静态博客远比不上wordpress托管到主机上的博客方便，因为太依赖本机环境，需要nodejs和git，每次更新后需要自己生成静态页面（虽然也就两行代码的事情），这一点都不cool！并且有一大弊端，当你转移电脑的时候，你需要转移你根目录下很多配置文件和之前的md文件，（图片等资源文件我是利用插件同步到了七牛的，所以资源文件不用担心），这也需要备份！（这个时候我想">
 <meta property="og:locale" content="English/中文/日本語">
-<meta property="og:image" content="http://www.shong.win/2017/02/static/image//hexo-ci/setting-general.jpg">
-<meta property="og:image" content="http://www.shong.win/2017/02/static/image//hexo-ci/setting-env.jpg">
-<meta property="og:image" content="http://www.shong.win/2017/02/static/image//hexo-ci/success.jpg">
-<meta property="og:updated_time" content="2018-12-29T17:10:46.814Z">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/6b2f6355ly1fyo5hpfrsej20k40i0gm6.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/6b2f6355ly1fyo5hpebl2j20ps0cdgm4.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/6b2f6355ly1fyo5hpgj8sj211y0kgmzv.jpg">
+<meta property="og:updated_time" content="2018-12-29T18:05:45.315Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo利用AppVeyor持续集成">
 <meta name="twitter:description" content="在第一天尝试了hexo之后，觉得这个静态博客远比不上wordpress托管到主机上的博客方便，因为太依赖本机环境，需要nodejs和git，每次更新后需要自己生成静态页面（虽然也就两行代码的事情），这一点都不cool！并且有一大弊端，当你转移电脑的时候，你需要转移你根目录下很多配置文件和之前的md文件，（图片等资源文件我是利用插件同步到了七牛的，所以资源文件不用担心），这也需要备份！（这个时候我想">
-<meta name="twitter:image" content="http://www.shong.win/2017/02/static/image//hexo-ci/setting-general.jpg">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/6b2f6355ly1fyo5hpfrsej20k40i0gm6.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Blog of Yvon Shong" type="application/atom+xml">
   
@@ -217,8 +217,8 @@
 <li>appveyor新建project<br>Github授权，关联相关repo（更新文档的repo）（我都是在<a href="http://github.com/yvon-shong/blog" target="_blank" rel="noopener">/blog</a> ）<br>设置项目</li>
 </ol>
 <ul>
-<li>setting-general<br><img src="../../static/image//hexo-ci/setting-general.jpg" alt="setting-general.jpg"></li>
-<li>setting-env<br><img src="../../static/image//hexo-ci/setting-env.jpg" alt="setting-env.jpg"></li>
+<li>setting-general<br><img src="http://ww1.sinaimg.cn/large/6b2f6355ly1fyo5hpfrsej20k40i0gm6.jpg" alt="setting-general.jpg"></li>
+<li>setting-env<br><img src="http://ww1.sinaimg.cn/large/6b2f6355ly1fyo5hpebl2j20ps0cdgm4.jpg" alt="setting-env.jpg"></li>
 </ul>
 <ol start="3">
 <li>配置appveyor.yml到文档repo</li>
@@ -245,7 +245,7 @@
 <p>这里yml将环境变量，我传进去的access_token用到了，这里应该就是配置ssh免密。<br>于是我相通了，不应该用hexo自带的部署，直接用git bash命令上传，于是我把后面部分修改成</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="string">git</span> <span class="string">add</span> <span class="bullet">-A</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">git</span> <span class="string">commit</span> <span class="bullet">-m</span> <span class="string">"Update Static Site"</span> </span><br><span class="line"><span class="bullet">-</span> <span class="string">git</span> <span class="string">push</span> <span class="string">origin</span> <span class="string">%TARGET_BRANCH%</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">appveyor</span> <span class="string">AddMessage</span> <span class="string">"Static Site Updated"</span></span><br></pre></td></tr></table></figure>
 <p>这里又回顾了一波git bash命令（通常都用sourcetree的我。。。）</p>
-<p>然后终于成功了！！！<br><img src="../../static/image//hexo-ci/success.jpg" alt="success"></p>
+<p>然后终于成功了！！！<br><img src="http://ww1.sinaimg.cn/large/6b2f6355ly1fyo5hpgj8sj211y0kgmzv.jpg" alt="success"></p>
 <p>至此，接下来只需要深入了解appveyor的自动集成周期等更详细的信息就行了。<br>appveyor还可以根据你git更新打的tag来触发！欢迎尝试！</p>
 <p>（凌晨一点终于搞完hexo持续集成，然后又花了一个小时写博客。。。）</p>
 
@@ -571,15 +571,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">cpp</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">opencv</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
