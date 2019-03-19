@@ -9,7 +9,7 @@
   <title>Hexo利用AppVeyor持续集成 | Blog of Yvon Shong</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="在第一天尝试了hexo之后，觉得这个静态博客远比不上wordpress托管到主机上的博客方便，因为太依赖本机环境，需要nodejs和git，每次更新后需要自己生成静态页面（虽然也就两行代码的事情），这一点都不cool！并且有一大弊端，当你转移电脑的时候，你需要转移你根目录下很多配置文件和之前的md文件，（图片等资源文件我是利用插件同步到了七牛的，所以资源文件不用担心），这也需要备份！（这个时候我想">
-<meta name="keywords" content="hexo,git,appveyor">
+<meta name="keywords" content="git,hexo,appveyor">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo利用AppVeyor持续集成">
 <meta property="og:url" content="http://www.shong.win/2017/02/19/hexo-ci/index.html">
@@ -19,7 +19,7 @@
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/6b2f6355ly1fyo5hpfrsej20k40i0gm6.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/6b2f6355ly1fyo5hpebl2j20ps0cdgm4.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/6b2f6355ly1fyo5hpgj8sj211y0kgmzv.jpg">
-<meta property="og:updated_time" content="2019-03-19T15:02:49.826Z">
+<meta property="og:updated_time" content="2019-03-19T15:12:23.407Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo利用AppVeyor持续集成">
 <meta name="twitter:description" content="在第一天尝试了hexo之后，觉得这个静态博客远比不上wordpress托管到主机上的博客方便，因为太依赖本机环境，需要nodejs和git，每次更新后需要自己生成静态页面（虽然也就两行代码的事情），这一点都不cool！并且有一大弊端，当你转移电脑的时候，你需要转移你根目录下很多配置文件和之前的md文件，（图片等资源文件我是利用插件同步到了七牛的，所以资源文件不用担心），这也需要备份！（这个时候我想">
@@ -80,10 +80,6 @@
             
     			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'album')" href="javascript:void(0)">专辑</a>
     			
             
     			
@@ -296,11 +292,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -532,29 +528,21 @@ MathJax.Hub.Queue(function() {
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 25%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 25%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
       
-      <li style="width: 25%" q-on="click: openSlider(e, 'album')"><a href="javascript:void(0)" q-class="active:album">专辑</a></li>
-      
-        
-      
-      <li style="width: 25%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
     </ul>
@@ -587,15 +575,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">matlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">cpp</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">opencv</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">matlab</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -619,11 +607,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -707,7 +695,19 @@ MathJax.Hub.Queue(function() {
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://tusimple.ai" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>TuSimple | 图森未来</a>
+              <a href="https://zhuanlan.zhihu.com/yvon-horizon" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Yvon&#39;s Horizon | 知乎专栏</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://zhuanlan.zhihu.com/jiritsu-soko" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>微软大法好 | 知乎专栏</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://zhuanlan.zhihu.com/microsoft" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>自律走行 | 知乎专栏</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://space.bilibili.com/6083595" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>vlog 合辑 | bilibili</a>
             </li>
           
             <li class="search-li">
@@ -723,6 +723,18 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
+              <a href="http://tusimple.ai" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>TuSimple | 图森未来</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://wondergate.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Wondergate | 奇阵科技</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://ippclub.org/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>ci123 | 育儿网</a>
+            </li>
+          
+            <li class="search-li">
               <a href="http://paopaorobot.org/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>PaoPaoRobot | 泡泡机器人</a>
             </li>
           
@@ -732,14 +744,6 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="http://ippclub.org/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>ippclub | I++俱乐部</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://wondergate.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>wondergate | 奇阵科技</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://ippclub.org/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>ci123 | 育儿网</a>
             </li>
           
             <li class="search-li">
