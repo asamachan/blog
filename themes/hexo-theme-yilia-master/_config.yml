@@ -2,20 +2,18 @@
 
 menu:
   主页: /
-  随笔: /categories/essay/
-  项目: /categories/project/
+  博文: /categories/essay/
   
 
 # SubNav
 subnav:
-  github: "http://github.com/yvon-shong"
-  weibo: "http://weibo.com/yiwenggogo"
-  zhihu: "http://zhihu.com/people/yvon-shong"
+  weibo: "https://www.weibo.com/asamaedu"
+  zhihu: "https://www.zhihu.com/org/qian-jian-liu-xue"
   #qq: "#"
   #weixin: "#"
   #jianshu: "#"
   #douban: "#"
-  mail: "mailto:yvon@shong.win"
+  mail: "mailto:contact@asamaedu.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -58,7 +56,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar: http://ww1.sinaimg.cn/large/6b2f6355ly1fyo5ta11dqj226i26jb0m.jpg
+avatar: https://i.loli.net/2019/09/19/JEjUYqVtbsFfOcm.png
 
 #是否开启分享
 share_jia: true
@@ -71,7 +69,7 @@ share_jia: true
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
-  header: '#4acaa8'
+  header: '#E186AF'
   # 右滑板块背景
   slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
 
@@ -88,16 +86,12 @@ slider:
 
 smart_menu:
   innerArchive: '所有文章'
-  aboutme: '关于我'
+  aboutme: '关于浅间'
   friends: "友链"
 
-aboutme: 自动驾驶从业者🚚 | TuSimple<br>微软大法传教士⛪️ | MSP <br>早稻田修士🌸 | Waseda University<br>vlogger🎥 | b站id yvonshong <br>还有少年热忱🙋🏻‍♂️
+aboutme: 是2019年新兴的留学服务团队，团队皆为世界知名顶级高校硕士，分别来自日本东北帝国大学，日本早稻田大学，新加坡南洋理工大学，相识于成都七中，坚持聘用专业领域的专业顾问，为客户提供留学申请到就职咨询一系列服务和解决方案。
 
 friends: 
-  Yvon's Horizon | 知乎专栏: https://zhuanlan.zhihu.com/yvon-horizon
-  微软大法好 | 知乎专栏: https://zhuanlan.zhihu.com/jiritsu-soko
-  自律走行 | 知乎专栏: https://zhuanlan.zhihu.com/microsoft
-  vlog 合辑 | bilibili: https://space.bilibili.com/6083595
-  Waseda University | 早稻田大学: http://www.waseda.jp
-  Southeast University | 东南大学: http://www.seu.edu.cn
-  Chengdu No.7 Middle High School | 成都七中: http://www.cdqz.net
+  知乎: https://zhuanlan.zhihu.com/yvon-horizon
+  微博: https://www.weibo.com/asamaedu
+  成都七中: http://www.cdqz.net
