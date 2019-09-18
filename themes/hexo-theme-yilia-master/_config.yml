@@ -26,7 +26,7 @@ rss: /atom.xml
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
 # 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
-url: http://www.shong.win/blog
+url: http://asamaedu.com/blog/
 root: /blog/
 
 # Content
@@ -101,10 +101,3 @@ friends:
   Waseda University | 早稻田大学: http://www.waseda.jp
   Southeast University | 东南大学: http://www.seu.edu.cn
   Chengdu No.7 Middle High School | 成都七中: http://www.cdqz.net
-  TuSimple | 图森未来: http://tusimple.ai
-  Wondergate | 奇阵科技: http://wondergate.io/
-  ci123 | 育儿网: http://ippclub.org/
-  PaoPaoRobot | 泡泡机器人: http://paopaorobot.org/
-  Microsoft Student Partner | 微软校园精英: https://studentpartners.microsoft.com/
-  ippclub | I++俱乐部: http://ippclub.org/
-  Appveyor: https://ci.appveyor.com/project/shong/yvon-shong-github-io
