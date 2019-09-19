@@ -3,6 +3,7 @@
 menu:
   主页: /
   博文: /categories/essay/
+
   
 
 # SubNav
@@ -56,7 +57,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar: https://i.loli.net/2019/09/19/BzbYonf42XG7K9y.png
+avatar: https://i.loli.net/2019/09/20/5hc6WBSosdZmDTn.png
 
 #是否开启分享
 share_jia: true
@@ -71,7 +72,7 @@ style:
   # 头像上面的背景颜色
   header: '#E186AF'
   # 右滑板块背景
-  slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
+  slider: 'linear-gradient(200deg,#E186AF,#E186AF)'
 
 # slider的设置
 slider:
@@ -92,6 +93,7 @@ smart_menu:
 aboutme: 是2019年新兴的留学服务团队，团队皆为世界知名顶级高校硕士，分别来自日本东北帝国大学，日本早稻田大学，新加坡南洋理工大学，相识于成都七中，坚持聘用专业领域的专业顾问，为客户提供留学申请到就职咨询一系列服务和解决方案。
 
 friends: 
-  知乎: https://zhuanlan.zhihu.com/yvon-horizon
+  官网: http://asamaedu.com/
+  知乎: https://www.zhihu.com/org/qian-jian-liu-xue
   微博: https://www.weibo.com/asamaedu
   成都七中: http://www.cdqz.net
