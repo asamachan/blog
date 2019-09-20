@@ -25,7 +25,7 @@ rss: /atom.xml
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
 # 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
-url: http://asamaedu.com/
+url: http://asamaedu.com/blog
 root: /blog/
 
 # Content
@@ -72,7 +72,7 @@ style:
   # 头像上面的背景颜色
   header: '#E186AF'
   # 右滑板块背景
-  slider: 'linear-gradient(200deg,#E186AF,#E186AF)'
+  slider: 'linear-gradient(200deg,#E186AF,#FFC0CB)'
 
 # slider的设置
 slider:
